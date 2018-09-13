@@ -1,0 +1,159 @@
+/*Reset*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+
+}
+
+header{
+	width: 100%;
+	height: 82px;
+	margin: auto;
+	background: #3e4444;
+	border-bottom: 1px solid #000;
+}
+
+.logo img {
+	height: auto;
+	width: 200px;
+	margin-top: 5px;
+	float: left;
+	margin-left: 40px;
+}
+
+ul {
+	font-family:'Adumu' ,'Passion One', cursive, sans-serif;
+	font-size: 25px;
+	float: right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 2px solid transparent;
+	transition: 0.6s ease;
+}
+
+ul li a:hover{
+	background-color: #226699;
+	color: #FFF;
+}
+
+
+
+.controle-lado{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/bk2.jpg) no-repeat;
+	height: 720px;
+	background-size: cover;
+}
+
+.esquerda{
+	float: left;
+	margin-left: 300px;
+	margin-top: 100px;
+	width: 450px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.esquerda h1{
+	color: #fff;
+	font-size: 40px;
+}
+
+.esquerda p{
+	color: #fff;
+	font-size: 20px;
+}
+
+.direita{
+	float: right;
+	margin-right: 150px;
+	margin-top: 100px;
+	width: 300px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.direita h1{
+	position: absolute;
+	top: 40%;
+	transform: translate(-10%, -10%);
+	right: 16%;
+	color: #fff;
+}
+
+.login{
+	width: 280px;
+	position: absolute;
+	top: 45%;
+	right: 10%;
+	transform: translate(-10%, -10%);
+}
+
+.senha{
+
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translate(-10%, -10%);
+}
+
+.btn{
+	position: absolute;
+	top: 60%;
+	right: 20%;
+	transform: translate(-10%, -10%);
+	
+}
+
+.login input{
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size:  18px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+
+.senha input{
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size:  18px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+
+::-webkit-input-placeholder{
+
+  color: white;
+  font-weight: bold;
+}
+
+.btn input {
+	background: #000;
+	border: 3px solid #4682B4;
+	color: white;
+	padding: 5px;
+	font-size: 19px;
+	cursor: pointer;
+	margin: 10px 0;
+}
