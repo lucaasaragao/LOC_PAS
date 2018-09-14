@@ -167,3 +167,99 @@ h1{
 	line-height: 18px;
 	color: darkgrey;
 }
+ /**************************************************************************************************************************************************/
+ /*css click.html*/
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.tudo{
+	widows: 100%;
+	height: 100vh;
+	background: #151519;
+
+
+}
+
+.tudo button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+button{
+	background: none;
+	color: #ccc;
+	width: 250px;
+	height: 90px;
+	border: 2px solid #226699;
+	font-size:  18px;
+	border-radius: 5px;
+	transition: .6s ease;
+	overflow: hidden;
+/*fOCANDO BUTÃO*/
+}
+
+button:focus{
+	outline: none;
+}
+
+button:before{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.5);
+	width: 60px;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur( 30px);
+	transform: translateX(-120px) skewX(-15deg );
+}
+/*faznedo transição de cores BUTÃO*/
+button:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.3);
+	widows: 30px;
+	height: 100%;
+	left: 30px;
+	top: 0;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg );
+
+}
+/*Hover do BUTÃO*/
+button:hover{
+	background: #226699;
+	cursor: pointer;
+}
+
+button:hover:before{
+	transform: translateX(300px) sKewX(-15deg);
+	opacity: .6;
+	transition: .7s
+}
+button:hover:after{
+	transform: translateX(300px) sKewX(-15deg);
+	opacity: 1;
+	transition: .7s
+}
+
+.mensagem p{
+	color: #fff;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+
+}
