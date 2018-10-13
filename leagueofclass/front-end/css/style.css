@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:108,300,400,500,200');
+
 /*Reset*/
-*{
+* {
 	padding: 0;
 	margin: 0;
 }
@@ -9,15 +11,17 @@ header{
 	width: 100%;
 	height: 82px;
 	margin: auto;
+	padding-bottom: 20px;
+	padding-top: -2px;
 	background: #3e4444;
 	border-bottom: 1px solid #000;
 }
 
-body{
-}
+body {}
+
 /*Formatação simples HEADER*/
 /**************************************************************************************************************************************************/
- /**************************************************************************************************************************************************/
+/**************************************************************************************************************************************************/
 
 .logo img {
 	height: auto;
@@ -28,7 +32,7 @@ body{
 }
 
 .nav ul {
-	font-family:'Adumu' ,'Passion One', cursive, sans-serif;
+	font-family: 'Adumu', 'Passion One', cursive, sans-serif;
 	font-size: 25px;
 	float: right;
 	list-style-type: none;
@@ -36,11 +40,11 @@ body{
 	margin-right: 50px;
 }
 
-.nav ul li{
+.nav ul li {
 	display: inline-block;
 }
 
-.nav ul li a{
+.nav ul li a {
 	text-decoration: none;
 	color: #fff;
 	padding: 5px 20px;
@@ -48,14 +52,14 @@ body{
 	transition: 0.6s ease;
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
 	background-color: #226699;
 	color: #FFF;
 }
 
 
 /**************************************************************************************************************************************************/
- /**************************************************************************************************************************************************/
+/**************************************************************************************************************************************************/
 
 
 
@@ -64,20 +68,20 @@ body{
 
 /*Arrumando a esqueda e a direta dos conteudos*/
 /**************************************************************************************************************************************************/
- /**************************************************************************************************************************************************/
+/**************************************************************************************************************************************************/
 
-.controle-lado{
+.controle-lado {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/bk3.jpg) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bk3.jpg) no-repeat;
 	background-position: 80% 60%;
 	/*background: #3e4444;*/
 	height: 700px;
 	background-size: cover;
 }
 
-.esquerda{
+.esquerda {
 	float: left;
 	margin-left: 300px;
 	margin-top: 100px;
@@ -85,17 +89,17 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-.esquerda h1{
+.esquerda h1 {
 	color: #fff;
 	font-size: 40px;
 }
 
-.esquerda p{
+.esquerda p {
 	color: #fff;
 	font-size: 20px;
 }
 
-.direita{
+.direita {
 	float: right;
 	margin-right: 320px;
 	width: 250px;
@@ -103,18 +107,18 @@ body{
 }
 
 /**************************************************************************************************************************************************/
- /**************************************************************************************************************************************************/
+/**************************************************************************************************************************************************/
 
 
 
 
 /*Formatação da caixa do login*/
 /**************************************************************************************************************************************************/
- /**************************************************************************************************************************************************/
-.login{
+/**************************************************************************************************************************************************/
+.login {
 	width: 350px;
 	height: 450px;
-	background: #000 ;
+	background: #000;
 	color: #fff;
 	top: 20%;
 	position: absolute;
@@ -122,7 +126,7 @@ body{
 	padding: 70px 30px;
 }
 
-.boneco{
+.boneco {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -131,25 +135,25 @@ body{
 	left: calc(50% - 50px);
 }
 
-h1{
+h1 {
 	margin: 0;
 	padding: 0 0 20px;
 	font-size: 22px;
 }
 
-.login p{
+.login p {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
 }
 
-.login input{
+.login input {
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.login input[type="text"], input[type="password"]
-{
+.login input[type="text"],
+input[type="password"] {
 	border: none;
 	border-bottom: 2px solid #fff;
 	background: transparent;
@@ -159,8 +163,7 @@ h1{
 	font-size: 15px;
 }
 
-.login input[type="submit"]
-{
+.login input[type="submit"] {
 	border: none;
 	outline: none;
 	height: 40px;
@@ -170,39 +173,39 @@ h1{
 	border-radius: 18px;
 }
 
-.login input[type="submit"]:hover
-{
+.login input[type="submit"]:hover {
 	cursor: pointer;
 	background: #2ed573;
 	color: #fff;
 }
 
-.login a{
+.login a {
 	text-decoration: none;
 	font-size: 12px;
 	line-height: 18px;
 	color: darkgrey;
 }
- /**************************************************************************************************************************************************/
- /**************************************************************************************************************************************************/
+
+/**************************************************************************************************************************************************/
+/**************************************************************************************************************************************************/
 
 
 /*SAIBA MAIS*/
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
-.conteudo{
+.conteudo {
 	background-color: #fff;
 	width: 100%;
 	height: 400px;
 }
 
-.saiba-mais{
+.saiba-mais {
 	width: 50%;
 	height: auto;
 }
 
-.saiba-mais h2{
+.saiba-mais h2 {
 	background: #fff;
 	width: 100%;
 	height: auto;
@@ -213,7 +216,7 @@ h1{
 	font-size: 40px;
 }
 
-.saiba-mais p{
+.saiba-mais p {
 	background: #fff;
 	width: 100%;
 	height: auto;
@@ -234,18 +237,18 @@ h1{
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
 
-.conteudo2{
+.conteudo2 {
 	background: ;
 	width: 100%;
 	height: 1000px;
 }
 
-.informacoes{
+.informacoes {
 	width: 100%;
 	height: auto;
 }
 
-.informacoes h2{
+.informacoes h2 {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -254,7 +257,7 @@ h1{
 	font-size: 40px;
 }
 
-.informacoes p{
+.informacoes p {
 	background: ;
 	width: 30%;
 	height: auto;
@@ -263,17 +266,17 @@ h1{
 	margin-top: 70px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	
+
 }
 
-.informacoes p:hover{
-	
+.informacoes p:hover {
+
 	transition: .6s ease;
 	overflow: auto;
 	box-shadow: 3px 3px 2px #a4b0be;
 }
 
-.informacoes img{
+.informacoes img {
 	width: 45%;
 	height: auto;
 	float: left;
@@ -290,17 +293,17 @@ h1{
 /*INFORMAÇÕES 2*/
 /**************************************************************************************************************************************************/
 
-.conteudo3{
+.conteudo3 {
 	background: #fff;
 	width: 100%;
 	height: 920px;
 }
 
-.informacoes2{
+.informacoes2 {
 	width: 100%;
 }
 
-.informacoes2 h2{
+.informacoes2 h2 {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -309,7 +312,7 @@ h1{
 	font-size: 40px;
 }
 
-.informacoes2 img{
+.informacoes2 img {
 	width: 900px;
 	height: auto;
 	float: right;
@@ -317,7 +320,7 @@ h1{
 	margin-right: 10%;
 }
 
-.informacoes2 p{
+.informacoes2 p {
 	width: 30%;
 	margin-left: 10%;
 	margin-top: 70px;
@@ -325,8 +328,8 @@ h1{
 	font-size: 19px;
 }
 
-.informacoes2 p:hover{
-	
+.informacoes2 p:hover {
+
 	transition: .6s ease;
 	overflow: auto;
 	box-shadow: 3px 3px 2px #a4b0be;
@@ -337,14 +340,14 @@ h1{
 /*INFORMAÇÕES 3*/
 
 
-.conteudo4{
-	background: #FFF ;
+.conteudo4 {
+	background: #FFF;
 	width: 100%;
 	height: 600px;
 
 }
 
-.informacoes3{
+.informacoes3 {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -353,7 +356,7 @@ h1{
 	font-size: 30px;
 }
 
-.texto-iformacoes1{
+.texto-iformacoes1 {
 	width: 500px;
 	height: 200px;
 	float: left;
@@ -362,7 +365,7 @@ h1{
 }
 
 
-.texto-iformacoes2{
+.texto-iformacoes2 {
 	width: 500px;
 	height: 200px;
 	margin-right: 5%;
@@ -370,49 +373,50 @@ h1{
 	margin-top: 20px;
 }
 
-.texto-iformacoes3{
+.texto-iformacoes3 {
 
 	width: 500px;
 	height: 200px;
 	margin-left: 38%;
 	margin-top: 20px;
-	
 
-	
+
+
 }
 
-.texto-iformacoes1 p{
+.texto-iformacoes1 p {
 	margin-top: 50px;
 	font-size: 25px;
 }
 
-.texto-iformacoes2 p{
-	margin-top: 50px;
-	font-size: 25px;
-}
-
-
-.texto-iformacoes3 p{
+.texto-iformacoes2 p {
 	margin-top: 50px;
 	font-size: 25px;
 }
 
 
+.texto-iformacoes3 p {
+	margin-top: 50px;
+	font-size: 25px;
+}
 
-.texto-iformacoes1 p:hover{
-	
+
+
+.texto-iformacoes1 p:hover {
+
 	transition: .6s ease;
 	overflow: auto;
 	box-shadow: 3px 3px 2px #a4b0be;
 }
 
-.texto-iformacoes2 p:hover{
-	
+.texto-iformacoes2 p:hover {
+
 	transition: .6s ease;
 	overflow: auto;
 	box-shadow: 3px 3px 2px #a4b0be;
 }
-.texto-iformacoes3 p:hover{
+
+.texto-iformacoes3 p:hover {
 	transition: .6s ease;
 	overflow: auto;
 	box-shadow: 3px 3px 2px #a4b0be;
@@ -429,13 +433,13 @@ h1{
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
 
-.conteudo5{
-	background:  ;
+.conteudo5 {
+	background: ;
 	width: 100%;
 	height: 900px;
 }
 
-.informacoes4{
+.informacoes4 {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -444,20 +448,21 @@ h1{
 	font-size: 30px;
 }
 
-.endereco p{
- 	width: 30%;
+.endereco p {
+	width: 30%;
 	margin-top: 250px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 25px;
 	float: right;
 	margin-right: 15%;
-	
+
 }
 
-.endereco iframe{
+.endereco iframe {
 	margin-top: 200px;
 	margin-left: 20%;
 }
+
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
 
@@ -466,13 +471,13 @@ h1{
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
 
-.conteudo6{
+.conteudo6 {
 	background: ;
 	width: 100%;
 	height: 600px;
 }
 
-.informacoes5 h2{
+.informacoes5 h2 {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -482,38 +487,38 @@ h1{
 
 }
 
-.container1{
+.container1 {
 	width: 300px;
 	height: 350px;
 	float: left;
 	margin-top: 100px;
-	margin-left: 4%;	
+	margin-left: 4%;
 }
 
-.container1 img{
+.container1 img {
 	width: 220px;
 	height: auto;
 	float: left;
 	margin-left: 15%;
 	border-radius: 70px;
-	
+
 }
 
-.container1 img:hover{
+.container1 img:hover {
 	cursor: pointer;
 	transition: .6s ease;
 	overflow: auto;
 	box-shadow: 6px 4px 4px #a4b0be;
 }
 
-.container1 p{
+.container1 p {
 	width: 200px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	margin-left: 20%;
 	margin-top: 10px;
 	margin-right: 10%;
-	
+
 }
 
 
@@ -525,30 +530,31 @@ h1{
 /*RODAPE*/
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
-.footer{
+.footer {
 	/*background:#3e4444 ;*/
 	width: 100%;
 	height: 0 auto;
 	margin-bottom: 20px;
 }
 
-.rodape h2{
+.rodape h2 {
 	margin-top: 200px;
 	color: #333;
 	background: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-	margin-left: 400px;		
+	margin-left: 400px;
 }
 
-.logo-rodape h2{
+.logo-rodape h2 {
 	color: #333;
 	background: #fff;
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 100px;
 	font-size: 36px;
-	margin-left: 400px;	
+	margin-left: 400px;
 }
+
 .lista-rodape1 ul li a {
 	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
@@ -568,14 +574,14 @@ h1{
 /***********************************************OUTRAS PAGINAS**********OUTRAS PAGINAS***************************************OUTRAS PAGINAS***********************/
 /************************************OUTRAS PAGINAS*****************OUTRAS PAGINAS****************OUTRAS PAGINAS***************************************************/
 
- /*css click.html*/
-*{
+/*css click.html*/
+* {
 	margin: 0;
 	padding: 0;
-	
+
 }
 
-.tudo{
+.tudo {
 	widows: 100%;
 	height: 100vh;
 	background: #151519;
@@ -590,70 +596,73 @@ h1{
 	transform: translate(-50%, -50%);
 }
 
-button{
+button {
 	background: none;
 	color: #ccc;
 	width: 250px;
 	height: 90px;
 	border: 2px solid #226699;
-	font-size:  18px;
+	font-size: 18px;
 	border-radius: 5px;
 	transition: .6s ease;
 	overflow: hidden;
-/*fOCANDO BUTÃO*/
+	/*fOCANDO BUTÃO*/
 }
 
-button:focus{
+button:focus {
 	outline: none;
 }
 
-button:before{
+button:before {
 	content: '';
 	display: block;
 	position: absolute;
-	background: rgba(255,255,255,.5);
+	background: rgba(255, 255, 255, .5);
 	width: 60px;
 	height: 100%;
 	left: 0;
 	right: 0;
 	top: 0;
 	opacity: .5s;
-	filter: blur( 30px);
-	transform: translateX(-120px) skewX(-15deg );
+	filter: blur(30px);
+	transform: translateX(-120px) skewX(-15deg);
 }
+
 /*faznedo transição de cores BUTÃO*/
-button:after{
+button:after {
 	content: '';
 	display: block;
 	position: absolute;
-	background: rgba(255,255,255,.3);
+	background: rgba(255, 255, 255, .3);
 	widows: 30px;
 	height: 100%;
 	left: 30px;
 	top: 0;
 	opacity: 0;
 	filter: blur(30px);
-	transform: translate(-100px) scaleX(-15deg );
+	transform: translate(-100px) scaleX(-15deg);
 
 }
+
 /*Hover do BUTÃO*/
-button:hover{
+button:hover {
 	background: #226699;
 	cursor: pointer;
 }
 
-button:hover:before{
+button:hover:before {
 	transform: translateX(300px) sKewX(-15deg);
 	opacity: .6;
 	transition: .7s
 }
-button:hover:after{
+
+button:hover:after {
 	transform: translateX(300px) sKewX(-15deg);
 	opacity: 1;
 	transition: .7s
 }
 
-.mensagem p{
+.mensagem p {
 	color: #fff;
 	position: absolute;
 	top: 15%;
@@ -663,6 +672,7 @@ button:hover:after{
 	font-size: 20px;
 
 }
+
 /**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
 
@@ -673,32 +683,32 @@ button:hover:after{
 
 /*JORGE* - > Pagina Cadastro Professor  E    Cadastro de Alunon/
 /**************************************************************************************************************************************************/
-/**************************************************************************************************************************************************/ 
+/**************************************************************************************************************************************************/
 /**************************************************************************************************************************************************/
 
-.formulario-cadastro{
+.formulario-cadastro {
 
 	width: 100%;
 	height: 1300px;
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/bk3.jpg) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bk3.jpg) no-repeat;
 	background-position: 80% 60%;
 	background-size: cover;
 	top: 50%;
 	left: 50%;
-	font-family:'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	float: left;
-	
+
 
 }
 
-.formulario-cadastro h2{
+.formulario-cadastro h2 {
 	margin-top: 30px;
 	font-size: 40px;
 	font-weight: 400;
 	color: #fff;
 }
 
-.formulario{
+.formulario {
 	padding: 0;
 	margin: 0;
 	background: #fff;
@@ -715,21 +725,21 @@ button:hover:after{
 
 }
 
-.formulario h2{
+.formulario h2 {
 	margin-top: 20px;
 	font-size: 30px;
 	color: #000;
 }
 
-.input-formulario{
+.input-formulario {
 	border: 1px solid #a4b0be;
 	margin: 8px 0;
 	padding: 12px 18px;
 	border-radius: 6px;
-	
+
 }
 
-.input-formulario label{
+.input-formulario label {
 	display: block;
 	text-align: left;
 	color: #333;
@@ -737,7 +747,7 @@ button:hover:after{
 	font-size: 18px;
 }
 
-.input-formulario input{
+.input-formulario input {
 	width: 100%;
 	border: none;
 	background: none;
@@ -746,22 +756,19 @@ button:hover:after{
 
 }
 
-.input-formulario p{
+.input-formulario p {
 	text-align: left;
 }
 
-.input-formulario input[type = "password"]
-{
+.input-formulario input[type="password"] {
 	color: #000;
 }
 
-.input-formulario input[type="radio"]
-{
-	transform: translateX(-150px) translateY(-20px) ;
+.input-formulario input[type="radio"] {
+	transform: translateX(-150px) translateY(-20px);
 }
 
-.btn-formulario input[type="submit"]
-{
+.btn-formulario input[type="submit"] {
 	border: none;
 	outline: none;
 	height: 40px;
@@ -774,8 +781,7 @@ button:hover:after{
 	cursor: pointer;
 }
 
-.btn-formulario input[type="submit"]:hover
-{
+.btn-formulario input[type="submit"]:hover {
 	cursor: pointer;
 	background: #2ed573;
 	color: #fff;
@@ -794,7 +800,7 @@ button:hover:after{
 /********PAGINA CLICK*****************/
 
 
-.fundo{
+.fundo {
 	widows: 100%;
 	height: 100vh;
 	background: #3e4444;
@@ -816,70 +822,73 @@ button:hover:after{
 	transform: translate(-50%, -50%);
 }
 
-.btn-escolha button{
+.btn-escolha button {
 	background: none;
 	color: #ccc;
 	width: 250px;
 	height: 90px;
 	border: 2px solid #226699;
-	font-size:  18px;
+	font-size: 18px;
 	border-radius: 5px;
 	transition: .6s ease;
 	overflow: hidden;
-/*fOCANDO BUTÃO*/
+	/*fOCANDO BUTÃO*/
 }
 
-.btn-escolha button:focus{
+.btn-escolha button:focus {
 	outline: none;
 }
 
-.btn-escolha button:before{
+.btn-escolha button:before {
 	content: '';
 	display: block;
 	position: absolute;
-	background: rgba(255,255,255,.5);
+	background: rgba(255, 255, 255, .5);
 	width: 60px;
 	height: 100%;
 	left: 0;
 	right: 0;
 	top: 0;
 	opacity: .5s;
-	filter: blur( 30px);
-	transform: translateX(-120px) skewX(-15deg );
+	filter: blur(30px);
+	transform: translateX(-120px) skewX(-15deg);
 }
+
 /*faznedo transição de cores BUTÃO*/
-.btn-escolha button:after{
+.btn-escolha button:after {
 	content: '';
 	display: block;
 	position: absolute;
-	background: rgba(255,255,255,.3);
+	background: rgba(255, 255, 255, .3);
 	widows: 30px;
 	height: 100%;
 	left: 30px;
 	top: 0;
 	opacity: 0;
 	filter: blur(30px);
-	transform: translate(-100px) scaleX(-15deg );
+	transform: translate(-100px) scaleX(-15deg);
 
 }
+
 /*Hover do BUTÃO*/
-.btn-escolha button:hover{
+.btn-escolha button:hover {
 	background: #2ed573;
 	cursor: pointer;
 }
 
-.btn-escolha button:hover:before{
+.btn-escolha button:hover:before {
 	transform: translateX(300px) sKewX(-15deg);
 	opacity: .6;
 	transition: .7s
 }
-.btn-escolha button:hover:after{
+
+.btn-escolha button:hover:after {
 	transform: translateX(300px) sKewX(-15deg);
 	opacity: 1;
 	transition: .7s
 }
 
-.mensagem-escolha p{
+.mensagem-escolha p {
 	color: #fff;
 	position: absolute;
 	top: 15%;
@@ -889,7 +898,7 @@ button:hover:after{
 	font-size: 30px;
 }
 
-.click-voltar-escolha p{
+.click-voltar-escolha p {
 	color: #fff;
 	position: absolute;
 	top: 60%;
@@ -903,53 +912,178 @@ button:hover:after{
 /***********************************************OUTRAS PAGINAS**********OUTRAS PAGINAS***************************************OUTRAS PAGINAS***********************/
 /************************************OUTRAS PAGINAS*****************OUTRAS PAGINAS****************OUTRAS PAGINAS***************************************************/
 
-/********PAGINA DASHBOARD PROFESSOR*****************/
+/********PAGINA DASHBOARD PROFESSOR E ALUNO*****************/
+
+#sideMenu {
+    background: #3e4444;
+    width: 280px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 80px;
+}
 
 
+a {
+    display: block;
+    color: #EAEDF3;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
 
+a:hover {
+    background: #226699;
+    border-left: 5px solid #92CF48;
+    padding: 15px 30px 15px 25px;
+}
 
+.fa {
+    color: #EAEDF3;
+    font-size: 1.4rem;
+    margin-right: 0.8rem;
+    display: inline-block;
+    width: 30px;
+    position: relative;
+    top: 2px;
+}
 
+a.active {
+    background: #0e4269;
+    border-left: 5px solid #92CF48;
+    padding: 15px 30px 15px 25px;
+}
 
-.logo-foto-professor img{
+.search-area {
+	display: inline-block;
+	padding-left: 5px;
+	width: 50%;
+	padding-top: 10px;
+}
+
+.search-area .fa {
+	color: #EAEDF3;
+	margin-top: -18px;
+	padding-bottom: 37px;
+	margin-left: 280px;
+}
+
+input[type="text" name="busca"] {
+	background: #fff;
+	border: none;
+	font-size: 1.3rem;
+	color: #92CF48;
+	padding: 10px;
+	font-weight: 90;
+	width: 100%;
+	transition: all .5s ease-in-out;
+
+}
+
+input[type="text"]:hover {
+	background: #F4F6F9;
+}
+
+.user-area {
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.user-area a {
+	display: inline-block;
+	padding-right: 20px;
+	text-decoration: none;
+	vertical-align: top;
+	height: 30px;
+	color: #1b1b1b;
+}
+
+.user-area span.circle {
+	display: inline-block;
+	background: red;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	font-size: 11px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 3px;
+	left: 5px;
+
+}
+
+.user-area a.notification {
+	position: relative;
+	font-size: 20px;
+	padding-top: 5px;
+	color: white;
+}
+
+.user-area .fa-caret-down {
+	position: relative;
+	top: -8px;
+	color: white;
+}
+
+.user-area .fa-bell {
+	position: relative;
+	top: -8px;
+	color: white;
+}
+
+.user-area a.add {
+	font-size: 16px;
+	font-weight: 500;
+	padding-top: 7px;
+	color: white;
+}
+
+input:focus,
+textarea:focus,
+input:active {
+	background: #F4F6F9;
+	outline: none;
+}
+
+#content-area {
+	margin-left: 280px;
+	padding: 15px;
+}
+
+#content-area .heading h1 {
+	color: gray;
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+#content-area .heading p {
+	color: #1b1b1b;
+	font-size: 0.8rem;
+	margin-bottom: 10px;
+}
+
+#content-area .cards {
+	overflow: auto;
+	margin-bottom: 30px;
+}
+
+#content-area .cards .card {
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	overflow: auto;
+}
+
+.logo-aluno h7 {
 	width: 80px;
 	height: 80px;
-	border-radius: 50%;
-	margin-left: 85%;
+	border-radius: 30%;
+	margin-left: 10%;
+	position: relative;
+	top: 22px;
+	color: white;
 }
-
-.menu-lateral-professor{
-	background: #3e4444;
-	height: 100%;
-	width: 300px;
-	position: absolute;
-	transition: all .2s linear;
-
-}
-
-nav .menu-professor{
-	width: 100%;
-	position: absolute;
-	top: 60px;
-}
-
-
-
-.menu-lateral-professor  a{
-
-	text-decoration: none;
-
-}
-
-.link-professor{
-	background-color: #494950;
-	padding: 20px;
-	font-family:'Montserrat', sans-serif;
-	transition: all .2s linear;
-	color: #f4f4f9;
-	border-bottom: 2px solid #222;
-}
-
-.link-professor:hover{
-	background-color: #226699;
-}
-
