@@ -22,27 +22,9 @@ from cadastros.views import cadastroAluno
 from cadastros.views import createAuthentic
 from acessos.views import *
 from cadastros.views import cadastroDisciplinaAluno
+from django.conf import settings
+from django.conf.urls.static import static
 
-
-# URLS PRE DEFINIDAS
-'''
-	# URLS!
-	> /INDEX
-	/
-	/home
-	/admin
-	/login
-	/cadastroAluno
-	/cadastroProfessor
-	/escolherPerfil
-	/logout
-	/dashboardProfessor
-	/dashboardAluno
-
-	SUB_URLS:
-		/relatoriosProfessor
-		/relatoriosAluno
-'''
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('escolherPerfil/',chosePerfil),
@@ -63,7 +45,13 @@ urlpatterns = [
     path('dashboardProfessor/disciplina', cadDisciplina),
     path('dashboardAluno/cadDisciplina', cadDiscAluno),
     path('dashboardProfessor/frequencia', lancarFreq),
+    path('dashboardProfessor/lancarAtividade/',lancarAtividades),
     path('logout/',logoutUser),
     path('failUser/',failUserXFF)
 
 ]
+
+if settings.DEBUG:
+    urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+

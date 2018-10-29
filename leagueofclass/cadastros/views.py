@@ -160,3 +160,33 @@ def cadastroAtividade(request):
 def cadastroDisciplinaAluno(request):
     # form
 	return render(request,"leagueofclass/cadastrarDisciplina.html")
+
+def lancarAtividades(request):
+	caminhoBase="/Documentos/"
+	data_p = {}
+	list_atividades=[]
+	list_paths_encontrados=[]
+	list_path_completa=[]
+	if request.method=="GET":
+		if request.user.is_authenticated:
+			professor=request.user
+			if professor!=None:
+				param = Professor.objects.get(email=request.user.email)
+				if param.matricula != None:
+					atividades = Perguntasx.objects.filter(matricula_professor=param.matricula)
+					for atividade in atividades:
+						list_atividades.append(atividade)
+
+					for paths in list_atividades:
+						if paths != False:
+							list_paths_encontrados.append(str(paths.atividade))
+
+					for paths_find in list_paths_encontrados:
+						complete = caminhoBase+paths_find
+						list_path_completa.append(complete)
+
+					data_p['exibirPaths'] = True
+					data_p['user'] = request.user
+					data_p['paths'] = list_path_completa
+
+					return render(request,"leagueofclass/lancarAtividades.html", data_p)
