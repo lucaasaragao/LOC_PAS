@@ -198,14 +198,14 @@ def atividadesAluno(request):
     if request.method == 'POST':
         if 'form4' in request.POST:
             nomeDisciplina = request.POST.get('opcAtv', 'null') #opcAtv é a disciplina que o aluno escolheu pra visualizar as atividades, lá no front
-            disciplina = Disciplinas.objects.get(nomeDisciplina=nomeDisciplina) 
+            disciplina = Disciplinas.objects.get(nomeDisciplina=nomeDisciplina)
             professor = disciplina.professor
             matriculaProfessor = professor.matricula
             atividades = Perguntasx.objects.filter(matricula_professor=matriculaProfessor) #atividades que foram cadastradas pelo professor da disciplina
             list_perguntas = []
             caminhoBase="/Documentos/"
             for atv in atividades:
-                list_perguntas.append(atv.atividade)
+                list_perguntas.append(caminhoBase + str(atv.atividade))
             data['atividades'] = list_perguntas
             data['exibeOpcAtividade'] = False
             data['exibeAtv'] = True

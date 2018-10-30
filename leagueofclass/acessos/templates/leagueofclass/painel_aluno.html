@@ -48,12 +48,39 @@
         <div class="heading">
           <!-- home do dashboardAluno -->
           {% if exibeInicio == True %}
-            <h1>{{ msg }}</h1>
             <!-- talvez um if pra imprimir as msg -->
             {% for aluno in alunos %}
-              <h5>Seu nome: {{aluno.nome}}</h5>
-              <h5>Email: {{aluno.email}}</h5>
-              <h5>Aluno da Instituição: {{aluno.nomeInstituicao}}</h5>
+            <div class="cards">
+            <div class="col-sm-8 col-md-4 col-lg-6 col-xl-2">
+                <div class="card">
+                    <div class="user-img"></div>
+                    <span class="user-name"><b>Seu nome:</b> {{aluno.nome}}</span><br><br>
+                    <span class="user-title"><b>Email:</b> {{aluno.email}}</span>
+                    <hr>
+                    <div class="col-md-3">
+                        <span class="education"><b>Aluno da Instituição:</b> {{aluno.nomeInstituicao}}</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6 col-xl-2">
+                <div class="card">
+                <div class="col-md-10">
+                  <span class="time">Rio Tinto - PB</span>
+                    <span class="location">
+                      <td><p id="date"></p></td>
+                      <script>
+                      n =  new Date();
+                      y = n.getFullYear();
+                      m = n.getMonth() + 1;
+                      d = n.getDate();
+                      document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+                      </script></span>
+                </div>
+            </div>
+        </div>
+    </div>
             {% endfor %}
           {% endif %}
 
