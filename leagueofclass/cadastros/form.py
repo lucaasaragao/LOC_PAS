@@ -3,7 +3,7 @@ import datetime
 from django import forms
 from django.forms import Form
 from django.forms.widgets import ClearableFileInput
-from .models import Aluno, Notas
+from .models import Aluno, Notas, Professor
 from .models import Usuarios
 from .models import Disciplinas
 from .models import Perguntasx
@@ -48,7 +48,13 @@ class AlunoForm(forms.ModelForm):
 
 			];
 
-
+class ProfessorForm(forms.ModelForm):
+	'''
+	Responsavel por criar o modelo de formulario a partir do modelo que esta sendo criado no db;
+	'''
+	class Meta:
+		model = Professor
+		fields = ['nome', 'sexo','dataNascimento','email','login','password','nomeInstituicao', 'matricula']
 
 class UsuarioForm(forms.ModelForm):
 	'''
