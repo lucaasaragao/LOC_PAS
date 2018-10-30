@@ -24,6 +24,7 @@ from acessos.views import *
 from cadastros.views import cadastroDisciplinaAluno
 from django.conf import settings
 from django.conf.urls.static import static
+from cadastros.views import lancarAtividades
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -46,6 +47,7 @@ urlpatterns = [
     path('dashboardAluno/cadDisciplina', cadDiscAluno),
     path('dashboardProfessor/frequencia', lancarFreq),
     path('dashboardProfessor/lancarAtividade/',lancarAtividades),
+    path('dashboardAluno/atv',frequenciaAluno),
     path('logout/',logoutUser),
     path('failUser/',failUserXFF)
 
@@ -53,5 +55,3 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-
-

@@ -134,6 +134,31 @@
               <br>
             {% endfor %}
           {% endif %}
+          <!-- fim exibe frequencia aluno -->
+
+          <!-- exibe atividades -->
+          {% if exibeOpcAtividade == True %}
+          <form action="" method="POST" id="opcAtv">
+          {% csrf_token %}
+            <label> <h1> Você quer visualizar as atividades de qual disciplina? <h1>
+            <select name="opcAtv" form="opcAtv">
+              {% for disciplina in qsDisciplinas %}
+              <option value="{{ disciplina.nomeDisciplina}}"> {{ disciplina.nomeDisciplina}} </option>
+              {% endfor %}
+            </select>
+            <input type="submit" value="Ok" name="form4">
+            </label>
+          </form>
+          {% endif %}
+
+          {% if exibeAtv == True %}
+          <h4>Atividades</h4>
+          {% for atv in atividades %}
+            <br>
+            <a aria-hidden="false" href="{{atv}}">Atividade</a>
+          {% endfor %}
+          {% endif %}
+          <!-- fim atividade -->
         </div>
     </section>
 </body>
