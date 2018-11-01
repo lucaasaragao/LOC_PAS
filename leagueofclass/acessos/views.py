@@ -81,7 +81,7 @@ def cadNotas(request):
             aluno = Aluno.objects.get(nome=data['aluno'])
             disciplina = Disciplinas.objects.get(nomeDisciplina=data['disciplina'])
             Notas.objects.create(aluno=aluno, disciplina=disciplina, nota1=data['nota1'], nota2=data['nota2'], nota3=data['nota3'], media=data['media'] )
-
+            return redirect('/notas')
             '''
             notas = NotasForm(request.POST)
             if notas.is_valid():
@@ -187,6 +187,7 @@ def lancarFreq(request):
             aluno = Aluno.objects.get(nome=nomeAluno)
             disciplina = Disciplinas.objects.get(nomeDisciplina=nomeDisciplina)
             Frequencia.objects.create(frequencia=presenca, aluno=aluno, disciplina=disciplina, data=dataF)
+
 
     return render(request,'leagueofclass/painel_professor.html', data)
 
